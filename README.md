@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Editor
+
+This is a simple web-based blog editor built with **Next.js 15**. It's designed to provide a straightforward and clean interface for creating and managing blog posts.
+
+## Features
+
+-   **Next.js 15 App Router:** Utilizes the new App Router for server components and nested layouts, enhancing performance and scalability.
+    
+-   **Static Site Generation (SSG):** Generates static HTML pages for blog posts at build time, leading to fast load times and improved SEO.
+    
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get the project up and running on your local machine.
 
-```bash
+### Prerequisites
+
+You'll need to have the following installed:
+
+-   Node.js (v18.0 or later)
+    
+-   npm or yarn
+- [Cloudinary account](https://cloudinary.com)
+
+    
+
+### Installation
+
+1.  Clone the repository:
+    
+    ```
+    git clone [https://github.com/srinivasan-sr/blog-editor.git](https://github.com/srinivasan-sr/blog-editor.git)
+    
+    ```
+    
+2.  Navigate to the project directory:
+    
+    ```
+    cd blog-editor
+    
+    ```
+    
+3.  Install the dependencies:
+    
+    ```
+    npm install
+    # or
+    yarn install
+    
+    ```
+    
+
+### Running the Development Server
+
+To start the development server, run the following command:
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be accessible at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The editor is simple and intuitive.
 
-## Learn More
+1.  Open the application in your browser.
+    
+2.  On the top right, you will see an option to see the 'Feed' and to create a 'New Post'.
+3. The homepage shows the most recent posts (Top 3 only) from the SQLite database.
+4. Tapping on the 'New Post' will allow you to add a new post to the database.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **Next.js 15:** The main framework for the application.
+    
+-   **React:** The JavaScript library for building the user interface.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   **SQLite:** A modern and lightweight database to hold the blog posts.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE "null").
+
